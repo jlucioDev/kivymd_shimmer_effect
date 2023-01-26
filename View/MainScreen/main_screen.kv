@@ -1,0 +1,21 @@
+
+<MainScreenView>
+    MDBoxLayout:
+        orientation: 'vertical'
+        MDTopAppBar:
+            id: appBar
+            title: 'KivyMD - Shimmer Widget'
+            left_action_items: [['menu']]
+            right_action_items: [['reload', lambda x: root.reload()]]
+
+        MDBoxLayout:
+            MDScrollView:
+                MDList:
+                    id: lst
+                    #md_bg_color: 1,0,0,1
+                    size_hint_y: 1.5
+                    #height: root.height + root.height
+                    #orientation: 'vertical'
+                    spacing: '5dp'
+                    padding: ('10dp', '10dp', '10dp', '10dp')
+    
